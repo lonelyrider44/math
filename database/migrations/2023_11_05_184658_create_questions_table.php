@@ -22,16 +22,16 @@ return new class extends Migration
             $table->timestamps();
         });
 
-        \DB::connection('hwga')->table('zadatak')->get()->each(function($zadatak){
-            Question::create([
-                'text' => $zadatak->zadatak,
-                'subject_id' => $zadatak->idPredmeta
-            ]);
-            // Subject::create([
-            //     'name' => $predmet->nazivPredmeta,
-            //     'level' => $predmet->idNivoa
-            // ]);
-        });
+        // \DB::connection('hwga')->table('zadatak')->get()->each(function($zadatak){
+        //     Question::create([
+        //         'text' => $zadatak->zadatak,
+        //         'subject_id' => $zadatak->idPredmeta
+        //     ]);
+        //     // Subject::create([
+        //     //     'name' => $predmet->nazivPredmeta,
+        //     //     'level' => $predmet->idNivoa
+        //     // ]);
+        // });
     }
 
     /**

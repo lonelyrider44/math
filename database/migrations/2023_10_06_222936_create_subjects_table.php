@@ -20,12 +20,12 @@ return new class extends Migration
             $table->timestamps();
         });
 
-        \DB::connection('hwga')->table('predmet')->get()->each(function($predmet){
-            Subject::create([
-                'name' => $predmet->nazivPredmeta,
-                'level' => $predmet->idNivoa
-            ]);
-        });
+        // \DB::connection('hwga')->table('predmet')->get()->each(function($predmet){
+        //     Subject::create([
+        //         'name' => $predmet->nazivPredmeta,
+        //         'level' => $predmet->idNivoa
+        //     ]);
+        // });
     }
 
     /**

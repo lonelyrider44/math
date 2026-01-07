@@ -21,16 +21,16 @@ return new class extends Migration
             $table->timestamps();
         });
 
-        \DB::connection('hwga')->table('oblast')->get()->each(function($oblast){
-            Chapter::create([
-                'name' => $oblast->nazivOblasti,
-                'subject_id' => $oblast->idPredmeta,
-            ]);
-            // Subject::create([
-            //     'name' => $predmet->nazivPredmeta,
-            //     'level' => $predmet->idNivoa
-            // ]);
-        });
+        // \DB::connection('hwga')->table('oblast')->get()->each(function($oblast){
+        //     Chapter::create([
+        //         'name' => $oblast->nazivOblasti,
+        //         'subject_id' => $oblast->idPredmeta,
+        //     ]);
+        //     // Subject::create([
+        //     //     'name' => $predmet->nazivPredmeta,
+        //     //     'level' => $predmet->idNivoa
+        //     // ]);
+        // });
     }
 
     /**
